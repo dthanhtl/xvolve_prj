@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F637875AA99A936F0BC8E841'
-               BlueprintName = 'PKHUD'
+               BlueprintIdentifier = 'EBAFCA08B218033A10C99AA4'
+               BlueprintName = 'UITextView+Placeholder'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'PKHUD.framework'>
+               BuildableName = 'UITextView_Placeholder.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

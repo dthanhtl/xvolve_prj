@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA138D761C8751D8004CC329 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA138D751C8751D8004CC329 /* ReviewViewController.swift */; };
+		AA138D7A1C8753E7004CC329 /* ReviewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA138D791C8753E7004CC329 /* ReviewObject.swift */; };
 		AA77079C1C874EAB00BA4F68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77079B1C874EAB00BA4F68 /* AppDelegate.swift */; };
 		AA77079E1C874EAB00BA4F68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77079D1C874EAB00BA4F68 /* ViewController.swift */; };
 		AA7707A11C874EAB00BA4F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA77079F1C874EAB00BA4F68 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		1F45DE5D7CA702A22D6F2AA0 /* Pods-HeardSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeardSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeardSample/Pods-HeardSample.release.xcconfig"; sourceTree = "<group>"; };
+		AA138D751C8751D8004CC329 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewViewController.swift; path = ViewControllers/ReviewViewController.swift; sourceTree = "<group>"; };
+		AA138D791C8753E7004CC329 /* ReviewObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewObject.swift; path = Models/ReviewObject.swift; sourceTree = "<group>"; };
 		AA7707981C874EAB00BA4F68 /* HeardSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeardSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA77079B1C874EAB00BA4F68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA77079D1C874EAB00BA4F68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AA138D731C87519E004CC329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA138D751C8751D8004CC329 /* ReviewViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA138D741C8751A8004CC329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA138D791C8753E7004CC329 /* ReviewObject.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		AA77078F1C874EAB00BA4F68 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +141,8 @@
 		AA77079A1C874EAB00BA4F68 /* HeardSample */ = {
 			isa = PBXGroup;
 			children = (
+				AA138D741C8751A8004CC329 /* Models */,
+				AA138D731C87519E004CC329 /* ViewControllers */,
 				AA77079B1C874EAB00BA4F68 /* AppDelegate.swift */,
 				AA77079D1C874EAB00BA4F68 /* ViewController.swift */,
 				AA77079F1C874EAB00BA4F68 /* Main.storyboard */,
@@ -333,6 +355,8 @@
 			files = (
 				AA77079E1C874EAB00BA4F68 /* ViewController.swift in Sources */,
 				AA77079C1C874EAB00BA4F68 /* AppDelegate.swift in Sources */,
+				AA138D7A1C8753E7004CC329 /* ReviewObject.swift in Sources */,
+				AA138D761C8751D8004CC329 /* ReviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

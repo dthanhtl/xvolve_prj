@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-HeardSample/Alamofire.framework"
   install_framework "Pods-HeardSample/Kingfisher.framework"
   install_framework "Pods-HeardSample/PKHUD.framework"
+  install_framework "Pods-HeardSample/UITextView_Placeholder.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-HeardSample/Alamofire.framework"
   install_framework "Pods-HeardSample/Kingfisher.framework"
   install_framework "Pods-HeardSample/PKHUD.framework"
+  install_framework "Pods-HeardSample/UITextView_Placeholder.framework"
 fi
