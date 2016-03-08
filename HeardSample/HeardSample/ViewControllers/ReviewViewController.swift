@@ -78,10 +78,10 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
         viewComment.layer.cornerRadius = 5.0
         viewComment.layer.masksToBounds = true
         viewComment.clipsToBounds = true
-        viewComment.layer.borderColor = UIColor.lightGrayColor().CGColor
+        viewComment.layer.borderColor = UIColor(red: 73/255, green: 74/255, blue: 74/255, alpha: 1).CGColor
         viewComment.layer.borderWidth = 1.0
         
-        btnSummit.layer.cornerRadius = 8.0
+        btnSummit.layer.cornerRadius = 5.0
         btnSummit.layer.masksToBounds = true
         btnSummit.clipsToBounds = true
         
@@ -108,7 +108,7 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
     */
 
     //MARK: - textview
-    var placeHolderText = "type here (optional)"
+    var placeHolderText = "type here ( optional )"
     
     func textViewShouldBeginEditing(textView: UITextView) -> Bool {
         
