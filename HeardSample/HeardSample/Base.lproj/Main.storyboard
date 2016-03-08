@@ -31,7 +31,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wWS-A5-jto">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wWS-A5-jto">
                                                 <rect key="frame" x="0.0" y="72" width="600" height="136"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COp-Uu-lNA">
@@ -40,20 +40,19 @@
                                                     <constraint firstAttribute="width" secondItem="COp-Uu-lNA" secondAttribute="height" multiplier="1:1" id="oio-O8-EyZ"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERYNN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2d-H4-09a">
-                                                <rect key="frame" x="267" y="179" width="68" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NBA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2d-H4-09a">
+                                                <rect key="frame" x="280" y="179" width="42" height="24"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMW-W0-XoR">
-                                                <rect key="frame" x="247" y="240" width="107" height="20"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="250" y="240" width="100" height="19"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZp-nV-l9G" userLabel="stars view">
-                                                <rect key="frame" x="210" y="268" width="182" height="30"/>
+                                                <rect key="frame" x="209" y="267" width="182" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgj-k8-jeP" userLabel="star1">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -156,12 +155,11 @@
                                                 </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBB-fJ-7X7" userLabel="money view">
-                                                <rect key="frame" x="241" y="298" width="120" height="50"/>
+                                                <rect key="frame" x="240" y="297" width="120" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkD-rn-lcG">
                                                         <rect key="frame" x="3" y="5" width="107" height="20"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
-                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEg-7U-Cou">
@@ -177,32 +175,31 @@
                                                 </constraints>
                                             </view>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="icon_visa" translatesAutoresizingMaskIntoConstraints="NO" id="giC-5Y-JQT">
-                                                <rect key="frame" x="549" y="320" width="26" height="16"/>
+                                                <rect key="frame" x="549" y="319" width="26" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="26" id="eRN-IY-eDo"/>
                                                     <constraint firstAttribute="height" constant="16" id="frf-oq-GhE"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="icon_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-1T-TZ4">
-                                                <rect key="frame" x="583" y="320" width="9" height="16"/>
+                                                <rect key="frame" x="583" y="319" width="9" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="1ma-x5-nJX"/>
                                                     <constraint firstAttribute="width" constant="9" id="Q2w-KV-rdH"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leave a comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilr-7i-VBd">
-                                                <rect key="frame" x="235" y="372" width="132" height="20"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="238" y="371" width="124" height="19"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wX-XV-qZv" userLabel="comment view">
-                                                <rect key="frame" x="20" y="400" width="560" height="91"/>
+                                                <rect key="frame" x="20" y="398" width="560" height="91"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bLk-bx-0jb">
                                                         <rect key="frame" x="0.0" y="0.0" width="560" height="91"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="BYZ-38-t0r" id="4rn-ik-wnC"/>
@@ -296,6 +293,7 @@
                     </view>
                     <connections>
                         <outlet property="avatar" destination="COp-Uu-lNA" id="JRk-vj-YFr"/>
+                        <outlet property="backgroundVie" destination="wWS-A5-jto" id="zRa-Va-a4u"/>
                         <outlet property="btnSummit" destination="rc5-xZ-wCj" id="MQl-P6-aQR"/>
                         <outlet property="scrollView" destination="PQx-ra-gIk" id="pR8-bx-k2w"/>
                         <outlet property="star1" destination="sgj-k8-jeP" id="YAM-4J-gHh"/>

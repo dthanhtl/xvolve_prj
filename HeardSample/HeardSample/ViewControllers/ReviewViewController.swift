@@ -28,6 +28,7 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var star5: UIButton!
 
     
+    @IBOutlet weak var backgroundVie: UIImageView!
     var tap = UITapGestureRecognizer()
     var isKBUp: Bool = false
     @IBOutlet weak var avatar: UIImageView!
@@ -41,22 +42,39 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
     
     
     override func viewDidAppear(animated: Bool) {
-        avatar.kf_setImageWithURL(NSURL(string: "https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/21519_10205607951061776_1491767073648151487_n.jpg?oh=29883a4a94a0c63b37cabaea929243b8&oe=5751999D")!, placeholderImage: nil)
+        PKHUD.sharedHUD.contentView = PKHUDTextView(text: "")
+        PKHUD.sharedHUD.show()
+
+        avatar.kf_setImageWithURL(NSURL(string: "https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/11221845_10153577034343463_7615505548754319145_n.jpg?oh=b00696c8fd115e6bcca6fab38955581b&oe=5761EA0B")!, placeholderImage: nil, optionsInfo:.None) { (image, error, cacheType, imageURL) -> () in
+            
+            PKHUD.sharedHUD.hide(afterDelay: 0.0, completion: nil)
+        }
         
         avatar.layer.cornerRadius = avatar.frame.size.width / 2
         avatar.layer.masksToBounds = true
         avatar.clipsToBounds = true
-        
         avatar.layer.borderColor = UIColor.whiteColor().CGColor
         avatar.layer.borderWidth = 2.0
     }
     
+    override func viewWillAppear(animated: Bool) {
+        PKHUD.sharedHUD.contentView = PKHUDTextView(text: "")
+        PKHUD.sharedHUD.show()
+        
+        backgroundVie.kf_setImageWithURL(NSURL(string: "https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/11221845_10153577034343463_7615505548754319145_n.jpg?oh=b00696c8fd115e6bcca6fab38955581b&oe=5761EA0B")!, placeholderImage: nil, optionsInfo:.None) { (image, error, cacheType, imageURL) -> () in
+            
+            PKHUD.sharedHUD.hide(afterDelay: 0.0, completion: nil)
+            
+            let blurEffect = UIBlurEffect(style: .Light)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = self.backgroundVie.bounds
+            blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+            self.backgroundVie.addSubview(blurEffectView)
+        }
+    }
     
     func initUI(){
-    
-        
-        
-        
+
         viewComment.layer.cornerRadius = 5.0
         viewComment.layer.masksToBounds = true
         viewComment.clipsToBounds = true
@@ -167,7 +185,6 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
             
         case 1:
             star1.setImage(UIImage(named: "star_active"), forState: .Normal)
-            
             star2.setImage(UIImage(named: "star_normal"), forState: .Normal)
             star3.setImage(UIImage(named: "star_normal"), forState: .Normal)
             star4.setImage(UIImage(named: "star_normal"), forState: .Normal)
@@ -177,7 +194,6 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
             
         case 2:
             star1.setImage(UIImage(named: "star_active"), forState: .Normal)
-            
             star2.setImage(UIImage(named: "star_active"), forState: .Normal)
             star3.setImage(UIImage(named: "star_normal"), forState: .Normal)
             star4.setImage(UIImage(named: "star_normal"), forState: .Normal)
@@ -187,7 +203,6 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
             
         case 3:
             star1.setImage(UIImage(named: "star_active"), forState: .Normal)
-            
             star2.setImage(UIImage(named: "star_active"), forState: .Normal)
             star3.setImage(UIImage(named: "star_active"), forState: .Normal)
             star4.setImage(UIImage(named: "star_normal"), forState: .Normal)
@@ -197,7 +212,6 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
             
         case 4:
             star1.setImage(UIImage(named: "star_active"), forState: .Normal)
-            
             star2.setImage(UIImage(named: "star_active"), forState: .Normal)
             star3.setImage(UIImage(named: "star_active"), forState: .Normal)
             star4.setImage(UIImage(named: "star_active"), forState: .Normal)
@@ -207,7 +221,6 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
             
         case 5:
             star1.setImage(UIImage(named: "star_active"), forState: .Normal)
-            
             star2.setImage(UIImage(named: "star_active"), forState: .Normal)
             star3.setImage(UIImage(named: "star_active"), forState: .Normal)
             star4.setImage(UIImage(named: "star_active"), forState: .Normal)
@@ -251,7 +264,6 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
             requestURL = "http://ec2-54-254-223-73.ap-southeast-1.compute.amazonaws.com:3005/api/conversation/submitReview"
             params = ["conversation_id": "-testconversationid_dont_delete", "rating_stars" : rate, "comment" : tvComment.text, "tip" : 3.0]
             
-            
             Alamofire.request(.POST, requestURL, parameters: params as? [String : AnyObject], encoding: .JSON, headers: nil).responseJSON { response in
                 
                 if let JSON = response.result.value as? NSDictionary {
@@ -263,7 +275,6 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
                     let tip: Float = data.objectForKey("tip") as! Float
                     let _id: String = data.objectForKey("id") as! String
                     
-                    
                     self.reviewObj = ReviewObject(convoID: convoID, stars: rating, comment: comment, tip: tip, ọbjID: _id)
                     
                     print(self.reviewObj)
@@ -273,8 +284,6 @@ class ReviewViewController: UIViewController, UITextViewDelegate {
                 }
             }
         }
-        
-
         
     }
 
