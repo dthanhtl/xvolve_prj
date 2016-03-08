@@ -264,7 +264,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rc5-xZ-wCj">
-                                                <rect key="frame" x="20" y="512" width="560" height="44"/>
+                                                <rect key="frame" x="20" y="578" width="560" height="44"/>
                                                 <color key="backgroundColor" red="0.38431372549019605" green="0.792156862745098" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="2Ge-Br-fCU"/>
@@ -302,6 +302,7 @@
                                             <constraint firstItem="wWS-A5-jto" firstAttribute="top" secondItem="TCV-Ga-WgR" secondAttribute="bottom" constant="4" id="Ng7-fo-FhQ"/>
                                             <constraint firstItem="TCV-Ga-WgR" firstAttribute="centerX" secondItem="K9r-e9-in3" secondAttribute="centerX" id="Tlw-zb-avg"/>
                                             <constraint firstItem="wWS-A5-jto" firstAttribute="height" secondItem="K9r-e9-in3" secondAttribute="height" multiplier="1/3" constant="-40" id="W7K-lF-0KM"/>
+                                            <constraint firstItem="rc5-xZ-wCj" firstAttribute="top" secondItem="3wX-XV-qZv" secondAttribute="bottom" constant="40" id="YfP-rP-e2i"/>
                                             <constraint firstItem="f2d-H4-09a" firstAttribute="top" secondItem="COp-Uu-lNA" secondAttribute="bottom" constant="16" id="ap5-Kv-m7W"/>
                                             <constraint firstAttribute="trailing" secondItem="3wX-XV-qZv" secondAttribute="trailing" constant="16" id="b5Q-2P-QT1"/>
                                             <constraint firstItem="3wX-XV-qZv" firstAttribute="top" secondItem="Ilr-7i-VBd" secondAttribute="bottom" constant="4" id="baI-Gk-GeH"/>
@@ -328,6 +329,7 @@
                                                 <exclude reference="2cl-w2-0eA"/>
                                                 <exclude reference="Knx-7X-Gay"/>
                                                 <exclude reference="pyf-5u-nGh"/>
+                                                <exclude reference="x5i-7v-tXG"/>
                                             </mask>
                                         </variation>
                                     </view>
